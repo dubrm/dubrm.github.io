@@ -3,6 +3,7 @@
     "home": {
         "text": "#Bonjour Agent 007.  \nVous venez de vous réveiller dans un hotel à Cuba.  \nMettez le son avant de lancer l'aventure.\n\n[Crédits musicaux](audio/README.md)",
         "audio": {
+            "ogg": "audio/suspense.ogg",
             "mp3": "audio/suspense.mp3"
         },
         "choices": [
@@ -20,6 +21,7 @@
     "generique": {
         "text": "#**James Bond contre les parapluies soviétiques**\n###Un turboludik dont vous êtes le héros",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -32,6 +34,7 @@
     "cuba1": {
         "text": "#Niveau 1 - Cuba\n  Un espion russe vien d'entrer dans la chambre ! Il est lourdement armé !  \n**Agissez vite !**",
         "audio": {
+            "ogg": "audio/clav.ogg",
             "mp3": "audio/clav.mp3"
         },
         "choices": [
@@ -52,6 +55,7 @@
     "cuba2": {
         "text": "L'hotel fait huit étages mais malgré cela vous retombez sur un balcon et entrez par la porte-fenêtre.  \n**Good lord !** Une cubaine en jupe courte vous attend. Elle a un pistolet !",
         "audio": {
+            "ogg": "audio/clav.ogg",
             "mp3": "audio/clav.mp3"
         },
         "choices": [
@@ -72,6 +76,7 @@
     "cuba3": {
         "text": "Bien tiré mais le coup de feu a alerté des hommes de main chinois !  \n**Ils arrivent...**",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "choices": [
@@ -88,6 +93,7 @@
     "cuba4": {
         "text": "##Argh :( \nCe n'était pas une bonne idée. Vous mourrez dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre dans le sang qui s'échappe de votre flanc transpercé.",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -100,7 +106,8 @@
     "cuba5": {
         "text": "Elle n'est pas très coriace. Après une somptueuse nuit d'amour, vous êtes brutalement réveillés.  \n**On frappe à la porte...**",
         "audio": {
-            "mp3": "audio/suspense.mp3"
+            "ogg": "audio/guitar.ogg",
+            "mp3": "audio/guitar.mp3"
         },
         "choices": [
             {
@@ -112,6 +119,7 @@
     "cuba6": {
         "text": "Elle va ouvrir...  \n*Bam !* Elle meurt, une balle dans le coeur. *Hell !* C'est l'espion russe !   \n**Viiiiite !!!**",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "choices": [
@@ -126,8 +134,9 @@
         ]
     },
     "cuba7": {
-        "text": "Vous retombez sur un scooter dont le propriétaire a généreusement oublié la clef. Vous démarrez et foncez dans la Havane. Soudain votre téléphone sonne.  \n**C'est M !**",
+        "text": "Vous retombez sur un scooter dont le propriétaire a généreusement oublié la clef. Vous démarrez et foncez dans la Havane. Soudain votre téléphone portable dernière génération de 500 grammes sonne.  \n**C'est M !**",
         "audio": {
+            "ogg": "audio/salsa.ogg",
             "mp3": "audio/salsa.mp3"
         },
         "choices": [
@@ -140,6 +149,7 @@
     "cuba8": {
         "text": "##Appel de : M\n> — Agent 007, allez tout droit. Notre hélico vous attend dans le port.",
         "audio": {
+            "ogg": "audio/phone.ogg",
             "mp3": "audio/phone.mp3"
         },
         "choices": [
@@ -152,6 +162,7 @@
     "cuba9": {
         "text": "Vous arrivez à temps au rendez-vous.  \n**Dix minutes plus tard, vous vous envolez vers l'inconnu...**",
         "audio": {
+            "ogg": "audio/clav.ogg",
             "mp3": "audio/clav.mp3"
         },
         "choices": [
@@ -164,6 +175,7 @@
     "cuba10": {
         "text": "##Tacatacatac !\nVous êtes un rudement bon tireur Bond. Par contre, vous avez allerté une horde de femmes de ménage. Elle se dirigent en masse vers la chambre.  \n**Que faire ?**",
         "audio": {
+            "ogg": "audio/salsa.ogg",
             "mp3": "audio/salsa.mp3"
         },
         "choices": [
@@ -180,6 +192,7 @@
     "cuba11": {
         "text": "*Bloody hell !* Ces femmes sont des rouges et leurs balais des bazookas ! Pour leur échapper, vous sautez par la fenêtre.",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "choices": [
@@ -192,6 +205,7 @@
     "cuba12": {
         "text": "Vous sautez par la fenêtre et tombez à une vitesse vertigineuse. *Dans quelques secondes vous aurez atteint le sol.*",
         "audio": {
+            "ogg": "audio/clav.ogg",
             "mp3": "audio/clav.mp3"
         },
         "duration": 7,
@@ -200,6 +214,7 @@
     "atlantique1": {
         "text": "#Niveau 2 - Atlantique\nVous survolez l'Atlantique paisiblement dans un hélicoptère de Sa Royale Majesté, *quand, tout à coup...*",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -212,6 +227,7 @@
     "atlantique2": {
         "text": "*Bloody reds !* Un chasseur vous poursuit. Ce *bloody bastard* est en train de transformer le fier appareil britannique en passoire à spaghettis.  \n**Il faut agir, vite !**",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "choices": [
@@ -232,6 +248,7 @@
     "atlantique3": {
         "text": "Bien essayé mais le vent dévie votre tir et fait passer la mitraillette par dessus bord. *Pourtant, dans quelques secondes le sanguinaire communiste va repartir à la charge !*",
         "audio": {
+            "ogg": "audio/suspense.ogg",
             "mp3": "audio/suspense.mp3"
         },
         "duration": 11,
@@ -240,6 +257,7 @@
     "atlantique4": {
         "text": "##Le pilote :\n> — Bond, le moteur est touché. La machine peut exploser d'une seconde à l'autre. Il faut sauter !\n\nIl saute. **Et vous...**",
         "audio": {
+            "ogg": "audio/guitar.ogg",
             "mp3": "audio/guitar.mp3"
         },
         "choices": [
@@ -260,6 +278,7 @@
     "atlantique5": {
         "text": "##Argh :( \nLe sandwich n'était pas un véritable sandwich britannique. La preuve, le jambon était avarié... Vous mourrez dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre terrassé par une indigestion fulgurante.",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -272,6 +291,7 @@
     "atlantique6": {
         "text": "Votre hélicoptère a pris feu, et vous vous rendez compte que vous ne savez pas piloter ce modèle.",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "choices": [
@@ -300,6 +320,7 @@
     "atlantique7": {
         "text": "##Argh :( \n*Seriously Bond ?!*\nVous mourrez calciné dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre dans l'hélicoptère envahi par les flammes qui finit par exploser en vol.",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -312,7 +333,7 @@
     "atlantique8": {
         "text": "Vous plongez dans l'eau glacée de l'Océan Atlantique. Vous appercevez au loin un périscope.",
         "audio": {
-            "mp3": "audio/majestic.mp3"
+            "ogg": "audio/majestic.ogg"
         },
         "choices": [
             {
@@ -332,6 +353,7 @@
     "atlantique9": {
         "text": "Le périscope, sans doute en réaction à l'explosion de l'hélicoptère, se dirige maintenant vers vous. *Il sera à votre niveau dans quelques secondes, et vous avez trop froid pour fuir...*",
         "audio": {
+            "ogg": "audio/epic.ogg",
             "mp3": "audio/epic.mp3"
         },
         "duration": 9.5,
@@ -340,6 +362,7 @@
     "atlantique10": {
         "text": "*Hurrah !* C'est un sous-marin de sa Majesté. Vous montez à bord...\n\nVous êtes reçu par M et Q !\n##M :\n> — Agent 007, nous avons une nouvelle mission à vous attribuer. Encore une fois, la couronne fait appel à vos services pour sauver le monde capitaliste. Vous devez anéantir une organisation secrète, **les parapluies soviétiques** ! Ce sont des agents rouges infiltrés sur le territoire britannique dans le but de déstabiliser la monarchie. Pour en savoir plus à leur sujet, vous partez dans une semaine pour Moscou. Mais d'abord, Q a quelque chose à vous montrer. C'est à vous Q.\n\n**Q vous invite à le suivre dans son laboratoire.**",
         "audio": {
+            "ogg": "audio/godsavethequeen.ogg",
             "mp3": "audio/godsavethequeen.mp3"
         },
         "choices": [
@@ -352,6 +375,7 @@
     "atlantique11": {
         "text": "##Argh :( \nAprès deux jours de nage dans l'eau glacée, vous mourrez d'inanition, tandis que vos ennemis se complaisent à vous regarder vous débattre dans l'eau le ventre résolument vide et l'esprit tourmenté.",
         "audio": {
+            "ogg": "audio/majestic.ogg",
             "mp3": "audio/majestic.mp3"
         },
         "choices": [
@@ -364,6 +388,7 @@
     "atlantique12": {
         "text": "##Q :\n> — Agent 007, j'ai quelques trucs pour vous... Prenez ce stylo. Il cache une lame extrêmement coupante et un petit appareil photo. Voici par ailleurs une nouvelle montre qui intègre un téléphone directement en lien avec le siège du MI6. Ah, oui, j'oubliais, une nouvelle Aston Martin avec mitraillettes à l'avant et à l'arrière, contrôlables directement sur le tableau de bord, vous attend sur le continent.",
         "audio": {
+            "ogg": "audio/bubbles.ogg",
             "mp3": "audio/bubbles.mp3"
         },
         "choices": [
@@ -376,6 +401,7 @@
     "atlantique13": {
         "text": "Une semaine plus tard, le sous-marin arrive au Portugal, où vous retrouvez votre voiture. Vous traversez toute l'Europe de l'Ouest en quelques jours et atteignez le rideau de fer. **Dans 48 heures, vous serez à Moscou...**",
         "audio": {
+            "ogg": "audio/guitar.ogg",
             "mp3": "audio/guitar.mp3"
         },
         "choices": [
@@ -388,6 +414,7 @@
     "end": {
         "text": "#To be continued...\nL'agent Bond arrivera-t-il sain et sauf à Moscou ? Réussira-t'il à sauver le capitalisme ? Vous le saurez lorsque l'auteur aura fini de mettre en ligne l'épisode 3 de **James Bond contre les parapluies soviétiques**.",
         "audio": {
+            "ogg": "audio/suspense.ogg",
             "mp3": "audio/suspense.mp3"
         },
         "choices": [
