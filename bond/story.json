@@ -86,7 +86,7 @@
         ]
     },
     "cuba4": {
-        "text": "##Argh :( \nC'était pas une bonne idée. Vous mourrez dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre dans le sang qui s'échappe de votre flanc transpercé.",
+        "text": "##Argh :( \nCe n'était pas une bonne idée. Vous mourrez dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre dans le sang qui s'échappe de votre flanc transpercé.",
         "audio": {
             "mp3": "audio/majestic.mp3"
         },
@@ -204,7 +204,7 @@
         },
         "choices": [
             {
-                "text": "Quoi ? Où ? Qui ? Que se passe-t'il !!!",
+                "text": "Quoi ? Où ? Qui ? Que se passe-t'il !",
                 "goto": "atlantique2"
             }
         ]
@@ -238,7 +238,7 @@
         "next": "atlantique4"
     },
     "atlantique4": {
-        "text": "##Le pilote :\n> — Bond, le moteur est touché. La machine peut exploser d'une seconde à l'autre. Il faut sauter !\nIl saute. **Et vous...**",
+        "text": "##Le pilote :\n> — Bond, le moteur est touché. La machine peut exploser d'une seconde à l'autre. Il faut sauter !\n\nIl saute. **Et vous...**",
         "audio": {
             "mp3": "audio/guitar.mp3"
         },
@@ -276,19 +276,15 @@
         },
         "choices": [
             {
-                "text": "Sauter",
+                "text": "Sauter maintenant",
                 "goto": "atlantique8"
             },
             {
-                "text": "Sauter",
+                "text": "Sauter maintenant",
                 "goto": "atlantique8"
             },
             {
-                "text": "Sauter",
-                "goto": "atlantique8"
-            },
-            {
-                "text": "Sauter",
+                "text": "Sauter maintenant",
                 "goto": "atlantique8"
             },
             {
@@ -342,7 +338,7 @@
         "next": "atlantique10"
     },
     "atlantique10": {
-        "text": "*Hurrah !* C'est un sous-marin de sa Majesté. Vous montez à bord...\n\nVous êtes reçu par M et Q !\n##M :\n> — Agent 007, nous avons une nouvelle mission à vous attribuer. Encore une fois, la couronne fait appel à vos services pour sauver le monde capitaliste. Vous devez anéantir une organisation secrète, **les parapluies soviétiques** ! Ce sont des agents rouges infiltrés sur le territoire britannique dans le but de déstabiliser la monarchie. Pour en savoir plus à leur sujet, vous partez dans une semaine pour Moscou. Mais d'abord, Q à quelque chose à vous montrer. C'est à vous Q.\n\n**Q vous invite à le suivre dans son laboratoire.**",
+        "text": "*Hurrah !* C'est un sous-marin de sa Majesté. Vous montez à bord...\n\nVous êtes reçu par M et Q !\n##M :\n> — Agent 007, nous avons une nouvelle mission à vous attribuer. Encore une fois, la couronne fait appel à vos services pour sauver le monde capitaliste. Vous devez anéantir une organisation secrète, **les parapluies soviétiques** ! Ce sont des agents rouges infiltrés sur le territoire britannique dans le but de déstabiliser la monarchie. Pour en savoir plus à leur sujet, vous partez dans une semaine pour Moscou. Mais d'abord, Q a quelque chose à vous montrer. C'est à vous Q.\n\n**Q vous invite à le suivre dans son laboratoire.**",
         "audio": {
             "mp3": "audio/godsavethequeen.mp3"
         },
@@ -378,7 +374,7 @@
         ]
     },
     "atlantique13": {
-        "text": "Une semaine plus tard, le sous-marin arrive au Portugal, où vous retrouvez votre voiture. Vous traversez toute l'Europe de l'Ouest en quelques jours et atteignez le rideau de fer. **Dans quelques jours, vous serez à Moscou...**",
+        "text": "Une semaine plus tard, le sous-marin arrive au Portugal, où vous retrouvez votre voiture. Vous traversez toute l'Europe de l'Ouest en quelques jours et atteignez le rideau de fer. **Dans 48 heures, vous serez à Moscou...**",
         "audio": {
             "mp3": "audio/guitar.mp3"
         },
