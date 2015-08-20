@@ -1,0 +1,192 @@
+{
+    "title": "James Bond Big Adventure",
+    "home": {
+        "text": "#Bonjour Agent 007.  \nVous venez de vous réveiller dans un hotel à Cuba.  \nMettez le son avant de lancer l'aventure.",
+        "audio": {
+            "mp3": "audio/suspense.mp3"
+        },
+        "choices": [
+            {
+                "text": "Lancer l'aventure",
+                "goto": "producer"
+            }
+        ]
+    },
+    "producer": {
+        "text": "####Mathis Dubrul presents...",
+        "duration": 2,
+        "next": "generique"
+    },
+    "generique": {
+        "text": "#**James Bond contre les parapluies soviétiques**",
+        "audio": {
+            "mp3": "audio/majestic.mp3"
+        },
+        "choices": [
+            {
+                "text": "Let's go !",
+                "goto": "cuba1"
+            }
+        ]
+    },
+    "cuba1": {
+        "text": "#Niveau 1 - Cuba\n  Un espion russe vien d'entrer dans la chambre ! Il est lourdement armé !  \n**Agissez vite !**",
+        "audio": {
+            "mp3": "audio/clav.mp3"
+        },
+        "choices": [
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba2"
+            },
+            {
+                "text": "Lui tirer dessus",
+                "goto": "cuba3"
+            },
+            {
+                "text": "Danser la java",
+                "goto": "cuba4"
+            }
+        ]
+    },
+    "cuba2": {
+        "text": "L'hotel fait huit étages mais malgré cela vous retombez sur un balcon et entrez par la porte-fenêtre.  \n**Good lord !** Une cubaine en jupe courte vous attend. Elle a un pistolet !",
+        "audio": {
+            "mp3": "audio/clav.mp3"
+        },
+        "choices": [
+            {
+                "text": "L'embrasser",
+                "goto": "cuba5"
+            },
+            {
+                "text": "Lui tirer dessus",
+                "goto": "cuba3"
+            },
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba7"
+            }
+        ]
+    },
+    "cuba3": {
+        "text": "Bien tiré mais le coup de feu a alerté des hommes de main chinois !  \n**Ils arrivent...**",
+        "audio": {
+            "mp3": "audio/epic.mp3"
+        },
+        "choices": [
+            {
+                "text": "Sortir ma mitraillette",
+                "goto": "cuba10"
+            },
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba7"
+            }
+        ]
+    },
+    "cuba4": {
+        "text": "##Argh :( \nC'était pas une bonne idée. Vous mourrez dans d'atroces souffrances, tandis que vos ennemis se complaisent à vous regarder vous débattre dans le sang qui s'échappe de votre flanc transpercé.",
+        "audio": {
+            "mp3": "audio/majestic.mp3"
+        },
+        "choices": [
+            {
+                "text": "Retentez l'aventure",
+                "goto": "home"
+            }
+        ]
+    },
+    "cuba5": {
+        "text": "Elle n'est pas très coriace. Après une somptueuse nuit d'amour, vous êtes brutalement réveillés.  \n**On frappe à la porte...**",
+        "audio": {
+            "mp3": "audio/suspense.mp3"
+        },
+        "choices": [
+            {
+                "text": "Mais qui ose donc !",
+                "goto": "cuba6"
+            }
+        ]
+    },
+    "cuba6": {
+        "text": "Elle va ouvrir...  \n*Bam !* Elle meurt, une balle dans le coeur. *Hell !* C'est l'espion russe !   \n**Viiiiite !!!**",
+        "audio": {
+            "mp3": "audio/epic.mp3"
+        },
+        "choices": [
+            {
+                "text": "Tuer ce salaud !",
+                "goto": "cuba3"
+            },
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba7"
+            }
+        ]
+    },
+    "cuba7": {
+        "text": "Vous retombez sur un scooter dont le propriétaire a généreusement oublié la clef. Vous démarrez et foncez dans la Havane. Soudais votre téléphone sonne.  \n**C'est M !**",
+        "audio": {
+            "mp3": "audio/salsa.mp3"
+        },
+        "choices": [
+            {
+                "text": "Décrocher",
+                "goto": "cuba8"
+            }
+        ]
+    },
+    "cuba8": {
+        "text": "##Appel de : M\n— Agent 007, allez tout droit. Notre hélico vous attend dans le port.",
+        "audio": {
+            "mp3": "audio/phone.mp3"
+        },
+        "choices": [
+            {
+                "text": "OK",
+                "goto": "cuba9"
+            }
+        ]
+    },
+    "cuba9": {
+        "text": "Vous arrivez à temps au rendez-vous.  \n**Dix minutes plus tard, ous vous envolez vers l'inconnu...**",
+        "audio": {
+            "mp3": "audio/clav.mp3"
+        },
+        "choices": [
+            {
+                "text": "Go niveau 2",
+                "goto": "home"
+            }
+        ]
+    },
+    "cuba10": {
+        "text": "##Tacatacatac !\nVous êtes un rudement bon tireur Bond. Par contre, vous avez allerté une horde de femmes de ménage.  \n**Que faire ?**",
+        "audio": {
+            "mp3": "audio/guitar.mp3"
+        },
+        "choices": [
+            {
+                "text": "Les attendre",
+                "goto": "cuba11"
+            },
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba7"
+            }
+        ]
+    },
+    "cuba11": {
+        "text": "*Bloody hell !* Ces femmes sont des rouges et leurs balais des bazookas ! Pour leur échapper, vous sautez par la fenêtre.",
+        "audio": {
+            "mp3": "audio/epic.mp3"
+        },
+        "choices": [
+            {
+                "text": "Sauter par la fenêtre",
+                "goto": "cuba7"
+            }
+        ]
+    }
+}

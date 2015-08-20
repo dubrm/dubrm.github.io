@@ -1,0 +1,280 @@
+/* line 5, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/partials/_typography.scss */
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* line 7, ../sass/partials/_typography.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 10, ../sass/partials/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+h1 {
+  font-size: 3rem;
+  line-height: 1.5em;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5em;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+h3 {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+h4 {
+  font-size: 1.5rem;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+blockquote {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+/* line 20, ../sass/partials/_typography.scss */
+code, pre {
+  font-family: monospace;
+  line-height: 1.5em;
+}
+
+/* line 24, ../sass/partials/_typography.scss */
+q, blockquote {
+  font-family: serif;
+  line-height: 1.5em;
+}
+
+/* line 28, ../sass/partials/_typography.scss */
+a {
+  color: #fd0;
+  text-decoration: none;
+}
+/* line 4, ../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/links/_hover-link.scss */
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/partials/_popup.scss */
+.popup {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  opacity: 0;
+  position: relative;
+  left: -50%;
+  transition: opacity 1s, left 1s;
+}
+/* line 14, ../sass/partials/_popup.scss */
+.popup.active {
+  opacity: 1;
+  left: 0;
+}
+/* line 18, ../sass/partials/_popup.scss */
+.popup h1 {
+  padding-bottom: 10px;
+  border-bottom: solid 1px grey;
+}
+
+@keyframes circle {
+  from {
+    transform: rotate(0deg) translateX(20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    transform: rotate(1080deg) translateX(20px);
+    opacity: 0;
+  }
+}
+/* line 14, ../sass/partials/_circles.scss */
+.circles {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
+
+/* line 19, ../sass/partials/_circles.scss */
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #fd0;
+  position: relative;
+  left: 20px;
+  top: -20px;
+  border-radius: 20px;
+  animation: circle 3s infinite;
+  opacity: 0;
+  display: block;
+}
+/* line 30, ../sass/partials/_circles.scss */
+.circle:first-child {
+  animation: circle 3s .1s infinite;
+  top: 20px;
+}
+/* line 34, ../sass/partials/_circles.scss */
+.circle:last-child {
+  animation: circle 3s .2s infinite;
+  top: -60px;
+}
+
+/* line 11, ../sass/turboludik.scss */
+html {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 1, ../sass/partials/_layout.scss */
+html {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+/* line 6, ../sass/partials/_layout.scss */
+body {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/* line 13, ../sass/partials/_layout.scss */
+.popup {
+  display: inline-block;
+}
+
+/* line 16, ../sass/partials/_layout.scss */
+section {
+  display: table;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+/* line 25, ../sass/partials/_layout.scss */
+.text {
+  height: 100%;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 33, ../sass/partials/_layout.scss */
+img, video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 38, ../sass/partials/_layout.scss */
+audio {
+  visibility: hidden;
+}
+
+/* line 42, ../sass/partials/_layout.scss */
+.choices {
+  list-style-type: none;
+  display: table-row;
+}
+/* line 45, ../sass/partials/_layout.scss */
+.choices a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #fd0;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem;
+}
+/* line 52, ../sass/partials/_layout.scss */
+.choices a:hover {
+  background-color: #ccb100;
+}
