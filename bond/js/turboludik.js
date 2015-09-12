@@ -56,6 +56,7 @@ and visual quality rather than code.
         }
     }
     
+    
     /******************** Popups ***********************/
     function newpopup(title, content, wait) {
         var popup = document.createElement('div');

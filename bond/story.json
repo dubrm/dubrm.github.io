@@ -246,7 +246,7 @@
         ]
     },
     "atlantique3": {
-        "text": "Bien essayé mais le vent dévie votre tir et fait passer la mitraillette par dessus bord. *Pourtant, dans quelques secondes le sanguinaire communiste va repartir à la charge !*",
+        "text": "Bien essayé mais le vent dévie votre tir et fait passer la mitraillette par dessus bord. *Pourtant, dans quelques secondes, le sanguinaire communiste va repartir à la charge !*",
         "audio": {
             "ogg": "audio/suspense.ogg",
             "mp3": "audio/suspense.mp3"
@@ -386,7 +386,7 @@
         ]
     },
     "atlantique12": {
-        "text": "##Q :\n> — Agent 007, j'ai quelques trucs pour vous... Prenez ce stylo. Il cache une lame extrêmement coupante et un petit appareil photo. Voici par ailleurs une nouvelle montre qui intègre un téléphone directement en lien avec le siège du MI6. Ah, oui, j'oubliais, une nouvelle Aston Martin avec mitraillettes à l'avant et à l'arrière, contrôlables directement sur le tableau de bord, vous attend sur le continent.",
+        "text": "##Q :\n> — Agent 007, j'ai quelques trucs pour vous... Prenez ce stylo. Il cache une lame extrêmement coupante et un petit appareil photo. Voici par ailleurs une nouvelle montre qui intègre un téléphone directement en lien avec le siège du MI6. Ah, oui, j'oubliais, une nouvelle Aston Martin avec mitraillettes camouflées à l'avant et à l'arrière, contrôlables directement sur le tableau de bord, vous attend sur le continent.",
         "audio": {
             "ogg": "audio/bubbles.ogg",
             "mp3": "audio/bubbles.mp3"
@@ -407,6 +407,19 @@
         "choices": [
             {
                 "text": "Go niveau 3",
+                "goto": "end"
+            }
+        ]
+    },
+    "urss1": {
+        "text": "#Niveau 3 - Sur la route de Moscou\nVous venez de passer dans le monde communiste. A partir de maintenant, vous vous appelez Jonas Vandewalvis et êtes négociant belge en diamants. Ce n'est pas très difficile, car c'est loin d'être la première fois que vous devez parler avec un accent néerlandais. Vous devrez cependant faire très attention, car maintenant que vous êtes au cœur du monstre soviétique, il sera impossible de vous exfiltrer.\n\nLa raison de votre séjour, du moins celle que vous avez fournie au poste frontière, est une importante vente de pierres précieuses, évidemment chapeautée par le Parti, qui doit se tenir dans les jours qui viennent dans la cité moscovite. Cette version, soigneusement préparée par le MI6, devrait vous permettre de passer innaperçu. De plus, M soupçonne la vente de cacher diverses manœuvres du pouvoir collectiviste, et en particulier une réunion des *Parapluies soviétiques*. Vous aurez donc tout intérêt à ouvrir l'œil !",
+        "audio": {
+            "ogg": "audio/urss.ogg",
+            "mp3": "audio/urss.mp3"
+        },
+        "choices": [
+            {
+                "text": "Même pas peur !",
                 "goto": "end"
             }
         ]
