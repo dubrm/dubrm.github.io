@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Matouche's sandbox</title>
-</head>
-<body>
-    <h1>Matouche's sandbox</h1>
-</body>
-</html>
+---
+layout: page
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire cet article médiocre jusqu'au bout &rightarrow;</a>
+    </article>
+  {% endfor %}
+</div>
