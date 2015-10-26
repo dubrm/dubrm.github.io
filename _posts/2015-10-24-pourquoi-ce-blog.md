@@ -7,7 +7,7 @@ title: Pourquoi ce blog ?
 
 Bien qu'en ce moment je sois le seul à connaître le chemin qui mène à ce blog, j'ai bon espoir qu'un jour, un inconnu tombe (par hasard ?) sur celui-ci.
 
-Pour toi, hypothétique lecteur (tu te caches bien en ce moment), je vais m'efforcer de publier ici un contenu de plus ou moins bonne qualité, parce que ça reste la base d'un blog. Voici donc, ce à quoi tu peux t'attendre.
+Pour toi, hypothétique lecteur (tu te caches bien en ce moment), je vais m'efforcer de publier ici un contenu de plus ou moins bonne qualité, parce que ça reste la base d'un blog. Voici donc ce à quoi tu peux t'attendre.
 
 ## Le contenu
 
@@ -20,7 +20,7 @@ Je ne pense pas donner de trop mauvais conseils en matière de films, j'essaiera
 ![Michael Keaton dans Birdman, d'Alejandro Iñárritu (Fox, 2015)](http://maison-image.fr/app/webroot/csi/wp-content/uploads/2015/05/488765.jpg)  
 *Michael Keaton dans Birdman, d'Alejandro Iñárritu (Fox, 2015)*
 
-Je pense par ailleurs reposter ici mes anciens articles pour [le journal de mon lycée](http://maison-image.fr/app/webroot/csi/) à propos de chefs-d'oeuvres terribles comme *Birdman*, *Magic in the Moonlight* ou *The Grand Budapest Hotel* (Wes Anderson fan <3).
+Je pense par ailleurs reposter ici mes anciens articles pour [le journal de mon lycée](http://maison-image.fr/app/webroot/csi/) à propos de chefs-d'oeuvres terribles comme *Birdman*, *Magic in the Moonlight* ou *The Grand Budapest Hotel* (Wes Anderson fan :yellow_heart: ).
 
 ### Animation et illustration
 > " L'animation, c'est ma passion !"
@@ -35,7 +35,7 @@ Mes projets précédents sont pour la plupart visibles sur [ma page Vimeo](https
 ### Développement
 NB: On parle bien ici de développement informatique, et principalement Web, et non pas de développement personnel et autres *positive attitudes*. Non mais oh, c'est un blog serieux ici !
 
-Je m'intéresse beaucoup au dév Web, comme le montre [ce compte GitHub](https://github.com/Matouche/). On peut donc s'attendre ici à quelques précisions autour de mes projets dans cette branche, et plus particulièrement une tentative de script *vanilla JS* s'inspirant des Livres "dont vous êtes le héros" : [turboludik](https://github.com/Matouche/turboludik).
+Je m'intéresse beaucoup au dév Web, comme le montre [ce compte GitHub :octocat:](https://github.com/Matouche/). On peut donc s'attendre ici à quelques précisions autour de mes projets dans cette branche, et plus particulièrement une tentative de script *vanilla JS* s'inspirant des Livres "dont vous êtes le héros" : [turboludik](https://github.com/Matouche/turboludik).
 
 ![Sass c'est bon](http://sass-lang.com/assets/img/styleguide/color-1c4aab2b.png)
 
