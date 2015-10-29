@@ -1,0 +1,16 @@
+{% for post in site.posts %}
+    {% for category in post.categories %}
+        {% if category == include.category %}
+            <article class="post">
+                <h1 class="small"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+                <div class="date">{{ post.date | date: " %e/%m/%Y" }}</div>
+                <div class="excerpt">
+                    {{ post.excerpt }}
+                </div>
+                <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
+                    Lire cet article médiocre jusqu'au bout &rightarrow;
+                </a>
+            </article>
+        {% endif %}
+    {% endfor %}
+{% endfor %}

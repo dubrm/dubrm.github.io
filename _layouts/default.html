@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <head>
+        <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+        {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="icon" type="image/png" href="/ressources/avatar.png">
+    
+    </head>
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/bond">Les parapluies soviétiques</a>
-          </nav>
+    <body>
+        <header>
+            <h1><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <nav id ="tagsmenu">
+                <a href="{{ site.baseurl }}/animation" id="animation-link">Animation</a>
+                <a href="{{ site.baseurl }}/cinema" id="cinema-link">Cinéma</a>
+                <a href="{{ site.baseurl }}/programmation" id="programmation-link">Programmation</a>
+                <a href="{{ site.baseurl }}/bond" id="gun-link">Les parapluies soviétiques</a>
+            </nav>
         </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
+        
+        {{content}}
+        
+        <footer id="footer">
+            <p>Sauf mention contraire, le contenu de ce blog est mis à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 4.0 International</a>.</p>
+            <a href="https://github.com/matouche" id="github">Github</a>
+            <a href="https://vimeo.com/user12625616" id="vimeo">Vimeo</a>
         </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+        {% include analytics.html %}
+    </body>
 </html>

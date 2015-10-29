@@ -1,0 +1,48 @@
+.posts{
+    background-color: $white;
+    padding: 50px 60px;
+    .post{
+        margin: 1em auto;
+        padding: 1em;
+        h1{
+        font-size: 30px;
+            float: left;
+            a{
+               text-decoration: none;
+                color: $headercolor;
+                &:hover {
+                    color: lighten($headercolor, 10%);
+                }
+            }
+        }
+    }
+    >h1::before{
+        content: '';
+        display: inline-block;
+        height: 50px; width: 50px;
+        vertical-align: middle;
+        padding-right: .5em;
+    }
+}
+
+.date {
+    float: right;
+    //margin-top: 1em;
+    font-style: italic;
+    color: lighten($headercolor, 20%);
+}
+
+.excerpt {
+    clear: both;
+}
+
+@each $icon in ('blog', 'animation', 'cinema', 'programmation') {
+    ##{$icon}-icon::before {
+        @include icons-sprite($icon);
+    }
+}
+
+.page{
+    min-height: 90%; //si pas de support calc
+    min-height: calc(100% - 100px);
+}

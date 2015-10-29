@@ -1,0 +1,63 @@
+header{
+    font-family: $oswald;
+    
+    height: 50px;
+    overflow: hidden;
+    padding-left: 60px;
+    
+    background-color: $headercolor;
+    
+    @media (max-width: 675px) {
+        height: 0;
+    }
+
+    h1 {
+        display: inline-block;
+        background: #000;
+        a {
+            font-size: 0;
+            display: block;
+            height: 50px; width: 50px;
+            @include icons-sprite(avatar);
+            position: absolute;
+            left: 6px; top: 0;
+        }
+    }
+    #tagsmenu {
+        font-size: 25px;
+        line-height: 50px;
+        float: right;
+        padding: 0;
+        a {
+            display: inline-block;
+            height: 50px;
+            text-decoration: none;
+            color: $white;
+            padding: 0 .5em;
+            overflow: hidden;
+            &::before {
+                content: '';
+                float: left;
+                margin-right: .5em;
+                height: 50px; width: 50px;
+                line-height: 0;
+            }
+            &:hover {
+                background: lighten($headercolor, 10%);
+            }
+            @media (max-width: 1030px) {
+                font-size: 0;
+                padding: 0 50px;
+            }
+            @media (max-width: 675px) {
+                display: none;
+            }
+        }
+    }
+}
+
+@each $val in (animation, programmation, cinema, gun) {
+    ##{$val}-link::before {
+        @include icons-sprite($val + '-white');
+    }
+}

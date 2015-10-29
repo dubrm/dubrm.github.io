@@ -1,0 +1,20 @@
+footer {
+    background-color: $headercolor;
+    @include background(radial-gradient(center-top, $headercolor 0%, darken($headercolor, 10%) 100%));
+    color: $white;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+    >a{
+        display: inline-block;
+        width: 50px; height: 50px;
+        font-size: 0;
+    }
+}
+#github{
+    @include icons-sprite(github);
+    margin-right: 25px;
+}
+#vimeo{
+    @include icons-sprite(vimeo);
+}
