@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.gem/ruby/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+body {
+  font-family: Bentham, serif;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+/* line 17, ../sass/screen.scss */
+header {
+  font-size: 1.5rem;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 22, ../sass/screen.scss */
+header div {
+  margin-top: 50vh;
+  /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+  /* tiré de la moitié de sa propre hauteur */
+}
+/* line 26, ../sass/screen.scss */
+header h1 {
+  font-size: 5rem;
+  font-style: italic;
+  line-height: 1em;
+}
+/* line 33, ../sass/screen.scss */
+header a {
+  color: #666;
+  animation: 5s blink infinite;
+  text-decoration: none;
+  font-size: 6rem;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 3rem;
+}
+
+@keyframes blink {
+  from {
+    color: #fff;
+  }
+  50% {
+    color: #000;
+  }
+  to {
+    color: #fff;
+  }
+}
+/* line 48, ../sass/screen.scss */
+#arthur {
+  font-style: italic;
+}
+
+/* line 51, ../sass/screen.scss */
+#subtitle {
+  margin-top: 3rem;
+}
+/* line 53, ../sass/screen.scss */
+#subtitle strong {
+  font-weight: bold;
+}
+
+/* line 58, ../sass/screen.scss */
+nav {
+  background-color: #135;
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+/* line 63, ../sass/screen.scss */
+nav div {
+  margin-top: 50vh;
+  /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+  /* tiré de la moitié de sa propre hauteur */
+  text-align: center;
+}
+/* line 68, ../sass/screen.scss */
+nav h1 {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+}
+/* line 72, ../sass/screen.scss */
+nav li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 5rem;
+}
+/* line 79, ../sass/screen.scss */
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 86, ../sass/screen.scss */
+section {
+  width: 30em;
+  text-align: justify;
+  margin: auto;
+  margin-top: 10rem;
+}
+/* line 91, ../sass/screen.scss */
+section h1 {
+  font-size: 3rem;
+  line-height: 3em;
+}
+/* line 95, ../sass/screen.scss */
+section h2 {
+  font-size: 2rem;
+  line-height: 3em;
+  text-align: center;
+}
+/* line 100, ../sass/screen.scss */
+section i {
+  font-style: italic;
+}
+
+/* line 104, ../sass/screen.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 107, ../sass/screen.scss */
+figure {
+  margin: 3em 0;
+  text-align: center;
+  font-weight: bold;
+}
+/* line 112, ../sass/screen.scss */
+figure figcaption::before {
+  content: '“';
+}
+/* line 115, ../sass/screen.scss */
+figure figcaption::after {
+  content: '”';
+}
+
+/* line 121, ../sass/screen.scss */
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #135;
+  color: #fff;
+  font-size: 2rem;
+}
+/* line 128, ../sass/screen.scss */
+#overlay p {
+  margin-top: 50vh;
+  /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+  /* tiré de la moitié de sa propre hauteur */
+  text-align: center;
+}
