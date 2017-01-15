@@ -1,0 +1,129 @@
+body {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif; }
+
+h1 {
+  font-family: "Slabo 13px", -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif; }
+
+header h1 {
+  font-size: 6rem;
+  line-height: 1em;
+  text-align: center; }
+header p {
+  text-align: left;
+  font-size: 1.5rem; }
+
+section h1 {
+  font-size: 2.5rem;
+  line-height: 1.5em; }
+
+a {
+  text-decoration: none; }
+  a:focus, a:hover {
+    text-decoration: underline;
+    border: none; }
+
+html, body {
+  margin: 0; }
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+header {
+  padding: 2.04082%; }
+  header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media (min-width: 1180px) {
+    header {
+      display: flex;
+      align-items: center;
+      min-height: 100vh; }
+      header h1 {
+        width: 48.97959%;
+        float: left;
+        margin-right: 2.04082%; }
+      header p {
+        width: 48.97959%;
+        float: right;
+        margin-right: 0; } }
+
+section {
+  width: 59.18367%;
+  max-width: 50rem;
+  margin: 4.08163% auto 0; }
+  section::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+@media (min-width: 720px) {
+  .picture-left-layout .picture {
+    width: 23.07692%;
+    float: left;
+    margin-right: 2.5641%;
+    padding-top: 4.08163%; }
+  .picture-left-layout .blabla {
+    width: 74.35897%;
+    float: right;
+    margin-right: 0; }
+
+  .picture-right-layout .picture {
+    width: 23.07692%;
+    float: right;
+    margin-right: 0;
+    padding-top: 4.08163%; }
+  .picture-right-layout .blabla {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%; } }
+.big-picture-layout .picture {
+  max-width: 100%; }
+
+.tip {
+  border: 2px solid;
+  padding: 1rem;
+  padding-left: 5rem;
+  position: relative; }
+  .tip::before {
+    content: '';
+    display: inline-block;
+    background: url("img/info.png") no-repeat;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 1rem;
+    top: calc(50% - 20px); }
+
+footer {
+  padding: 1rem;
+  margin-top: 4.08163%; }
+
+header, footer {
+  color: #eee;
+  background-image: radial-gradient(circle at 50% 0, #b13, #8c0d26); }
+
+body {
+  background-color: #eee; }
+
+.tip {
+  background-color: #ccc;
+  border-color: #b3b3b3; }
+
+section h1 {
+  color: #b13; }
+section a {
+  color: #a80f2e; }
+  section a:hover, section a:focus {
+    color: #8c0d26; }
+
+/*# sourceMappingURL=main.css.map */
