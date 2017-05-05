@@ -1,0 +1,209 @@
+$light: #eaeaea;
+$dark: #171813;
+$red: #bd342c;
+$green: #4a4e11;
+
+@mixin mq ($min-w, $min-h: null){
+  @if $min-h {
+    @media (min-width: $min-w) and (min-height: $min-h){
+        @content;
+    }
+  }
+  @else {
+    @media (min-width: $min-w){
+        @content;
+    }
+  }
+}
+
+@keyframes smooth-blink-arrow{/*pour la flèche du header*/
+    0% {
+        border-color: $red;
+    }
+    50% {
+        border-color: darken($red, 30%);
+    }
+    100% {
+        border-color: $red;
+    }
+}
+
+@keyframes smooth-blink-button{/*pour le bouton de l'intro*/
+    0% {
+        background-color: $red;
+    }
+    50% {
+        background-color: darken($red, 10%);
+    }
+    100% {
+        background-color: $red;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    background-color: $light;
+    color: $dark;
+}
+
+header{
+    height: 100vh;
+    background-color: $dark;
+    overflow: hidden; /*supprime fusion des marges*/
+    padding: 0 10%;
+    position: relative;
+     h1 {
+        color: $light;
+        text-align: center;
+        font-size: 2.5rem;
+        @include mq(480px){font-size: 3rem};
+        @include mq(800px){font-size: 4rem};
+        line-height: 1.2em;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+    }
+    a{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        bottom :2rem;
+        @include mq(480px, 480px){
+            width: 3rem;
+            height: 3rem;
+            bottom :3rem;
+        };
+        border-right: 5px solid;
+        border-bottom: 5px solid;
+        border-color: $red;
+        animation: smooth-blink-arrow 3s ease-in-out infinite;
+        left: 50%;
+        transform : translateX(-50%) rotate(45deg);
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: "Cabin Condensed", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+h2{
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+section {
+    box-sizing: border-box;
+    padding: 10vh 10%;
+    @include mq(700px){font-size: 1.5rem};
+    line-height: 1.5em;
+}
+
+#intro {
+    min-height: 100vh;
+    @include mq(700px){font-size: 2rem};
+    line-height: 1.5em;
+}
+
+.button{
+    display: block;
+    background-color: $red;
+    animation: smooth-blink-button 3s ease-in-out infinite;
+    color: $light;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#synopsis {
+    position: relative;
+    background-color: $green;
+    color: $light;
+}
+
+.illu-synopsis {
+    max-width: 100%;
+    max-height: 20rem;
+}
+
+@include mq(1075px) {
+    .groupe-strophe {
+        overflow: hidden; /*contient les flottants*/
+    }
+    .strophe-synopsis{
+        float: left;
+        margin-top: 0;
+    }
+    .illu-synopsis {
+        float:right;
+        max-height: 6*1.5em;
+        max-width: 30%;
+    }
+}
+
+#synopsis:after {
+    content: '';
+    display: block;
+    height: 15vh;
+    background-image: url('./imgs/kodama.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -5vh;
+    left: 0;
+    right: 0;
+}
+
+.citations {
+    text-align: center;
+}
+
+blockquote {
+    background-color: $red;
+    color: $light;
+    display: inline-block;
+    padding: 2rem;
+    position: relative;
+    small {
+        font-size: 0.7em;
+        display: block;
+        text-align: right;
+    }
+    &:after {
+        content: '';
+        display: inline-block;
+        border: 2rem solid transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -2rem;
+        right: 100%;
+        border-right-color: $red;
+    }
+    &+& {
+        background-color: $green;
+        &:after{
+            right: inherit;
+            left: 100%;
+            border-right-color: transparent;
+            border-left-color: $green;
+        }
+    }
+}
+
+.warning {
+    background-color: $green;
+    color: $light;
+    padding: 2rem;
+}
