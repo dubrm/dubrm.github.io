@@ -1,128 +1,212 @@
-@charset "UTF-8";
-@keyframes smooth-blink-arrow {
-  /*pour la flèche du header*/
+/*Google font :*/
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cabin Condensed"), local("CabinCondensed-Regular"), url(https://fonts.gstatic.com/s/cabincondensed/v9/B0txb0blf2N29WdYPJjMSpxJ83IsFXPkaOMREZp9U_I.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Cabin Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cabin Condensed"), local("CabinCondensed-Regular"), url(https://fonts.gstatic.com/s/cabincondensed/v9/B0txb0blf2N29WdYPJjMStWMqZ82NGJlZbN8XLKSRYo.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v13/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/*Fin Google Font*/
+@keyframes fleche-anim {
+  /*pour la fleche du header*/
   0% {
-    border-color: #bd342c; }
+    border-color: #bd342c;
+  }
   50% {
-    border-color: #41120f; }
+    border-color: #41120f;
+  }
   100% {
-    border-color: #bd342c; } }
-@keyframes smooth-blink-button {
+    border-color: #bd342c;
+  }
+}
+@keyframes bouton-anim {
   /*pour le bouton de l'intro*/
   0% {
-    background-color: #bd342c; }
+    background-color: #bd342c;
+  }
   50% {
-    background-color: #942922; }
+    background-color: #942922;
+  }
   100% {
-    background-color: #bd342c; } }
+    background-color: #bd342c;
+  }
+}
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   background-color: #eaeaea;
-  color: #171813; }
+  color: #171813;
+}
 
 header {
-  height: 100vh;
+  min-height: 100%;
   background-color: #171813;
   overflow: hidden;
   /*supprime fusion des marges*/
   padding: 0 10%;
-  position: relative; }
+  position: relative;
+}
+header h1 {
+  color: #eaeaea;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 1.2em;
+  margin-top: 50vh;
+  transform: translateY(-50%);
+  /*recentrage vertical*/
+}
+@media (min-width: 480px) {
   header h1 {
-    color: #eaeaea;
-    text-align: center;
-    font-size: 2.5rem;
-    line-height: 1.2em;
-    margin-top: 50vh;
-    transform: translateY(-50%); }
-    @media (min-width: 480px) {
-      header h1 {
-        font-size: 3rem; } }
-    @media (min-width: 800px) {
-      header h1 {
-        font-size: 4rem; } }
+    font-size: 3rem;
+  }
+}
+@media (min-width: 800px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+header a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  border-right: 5px solid;
+  border-bottom: 5px solid;
+  border-color: #bd342c;
+  animation: fleche-anim 3s ease-in-out infinite;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  /*recentrage et pivoter vers le bas*/
+  text-decoration: none;
+  text-align: center;
+}
+@media (min-width: 480px) and (min-height: 480px) {
   header a {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    bottom: 2rem;
-    border-right: 5px solid;
-    border-bottom: 5px solid;
-    border-color: #bd342c;
-    animation: smooth-blink-arrow 3s ease-in-out infinite;
-    left: 50%;
-    transform: translateX(-50%) rotate(45deg);
-    text-decoration: none;
-    text-align: center; }
-    @media (min-width: 480px) and (min-height: 480px) {
-      header a {
-        width: 3rem;
-        height: 3rem;
-        bottom: 3rem; } }
+    width: 3rem;
+    height: 3rem;
+    bottom: 3rem;
+  }
+}
 
 h1, h2, h3 {
   text-transform: uppercase;
   font-family: "Cabin Condensed", Helvetica, Arial, sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 h2 {
   font-size: 2em;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
 
 p {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
+
+img {
+  max-width: 100%;
+  box-sizing: border-box;
+}
 
 section {
   box-sizing: border-box;
   padding: 10vh 10%;
-  line-height: 1.5em; }
-  @media (min-width: 700px) {
-    section {
-      font-size: 1.5rem; } }
+  line-height: 1.5em;
+}
+@media (min-width: 700px) {
+  section {
+    font-size: 1.5rem;
+  }
+}
 
 #intro {
-  min-height: 100vh;
-  line-height: 1.5em; }
-  @media (min-width: 700px) {
-    #intro {
-      font-size: 2rem; } }
+  min-height: 100%;
+  line-height: 1.5em;
+  position: relative;
+}
+@media (min-width: 700px) {
+  #intro {
+    font-size: 2rem;
+  }
+}
 
 .button {
   display: block;
   background-color: #bd342c;
-  animation: smooth-blink-button 3s ease-in-out infinite;
+  animation: bouton-anim 3s ease-in-out infinite;
   color: #eaeaea;
   text-align: center;
   text-decoration: none;
   padding: 1rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 #synopsis {
   position: relative;
   background-color: #4a4e11;
-  color: #eaeaea; }
+  color: #eaeaea;
+}
 
 .illu-synopsis {
   max-width: 100%;
-  max-height: 20rem; }
+  max-height: 20rem;
+}
 
 @media (min-width: 1075px) {
   .groupe-strophe {
     overflow: hidden;
-    /*contient les flottants*/ }
+    /*contient les flottants*/
+    margin: 2rem 0;
+  }
 
   .strophe-synopsis {
     float: left;
-    margin-top: 0; }
+    margin: 0;
+  }
 
   .illu-synopsis {
     float: right;
     max-height: 9em;
-    max-width: 30%; } }
+    max-width: 30%;
+    position: relative;
+    top: 4.5em;
+    transform: translateY(-50%);
+  }
+}
 #synopsis:after {
   content: '';
   display: block;
@@ -134,41 +218,98 @@ section {
   position: absolute;
   bottom: -5vh;
   left: 0;
-  right: 0; }
+  right: 0;
+}
 
 .citations {
-  text-align: center; }
+  text-align: center;
+}
 
 blockquote {
   background-color: #bd342c;
   color: #eaeaea;
   display: inline-block;
   padding: 2rem;
-  position: relative; }
-  blockquote small {
-    font-size: 0.7em;
-    display: block;
-    text-align: right; }
-  blockquote:after {
-    content: '';
-    display: inline-block;
-    border: 2rem solid transparent;
-    position: absolute;
-    top: 50%;
-    margin-top: -2rem;
-    right: 100%;
-    border-right-color: #bd342c; }
-  blockquote + blockquote {
-    background-color: #4a4e11; }
-    blockquote + blockquote:after {
-      right: inherit;
-      left: 100%;
-      border-right-color: transparent;
-      border-left-color: #4a4e11; }
+  position: relative;
+}
+blockquote small {
+  font-size: 0.7em;
+  display: block;
+  text-align: right;
+}
+blockquote:after {
+  content: '';
+  display: inline-block;
+  border: 2rem solid transparent;
+  position: absolute;
+  top: 50%;
+  margin-top: -2rem;
+  right: 100%;
+  border-right-color: #bd342c;
+}
+blockquote + blockquote {
+  background-color: #4a4e11;
+}
+blockquote + blockquote:after {
+  right: inherit;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: #4a4e11;
+}
+
+figure {
+  background-color: #171813;
+  color: #eaeaea;
+  padding: 1rem;
+  margin: auto;
+}
+@media (min-width: 700px) {
+  figure {
+    width: 60%;
+  }
+}
+
+figcaption {
+  text-align: center;
+}
 
 .warning {
   background-color: #4a4e11;
   color: #eaeaea;
-  padding: 2rem; }
+  padding: 2rem;
+}
+
+#conclu {
+  background-color: #bd342c;
+  color: #eaeaea;
+  min-height: 90%;
+}
+#conclu ul {
+  list-style-type: square;
+  font-size: 0.8em;
+}
+#conclu ul a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+#conclu ul a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #171813;
+  color: #eaeaea;
+  padding: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 700px) {
+  footer {
+    font-size: 1.5rem;
+  }
+}
+footer span {
+  color: #bd342c;
+  font-size: 2em;
+}
 
 /*# sourceMappingURL=mononoke.css.map */
