@@ -1,6 +1,0 @@
-source 'http://rubygems.org'
-gem 'github-pages'
-gem 'RedCloth'
-gem 'nokogiri', '1.6.7.rc3'
-gem 'jemoji'
-gem 'compass'

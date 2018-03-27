@@ -1,29 +1,18 @@
----
-layout: default
----
-<section id="welcome">
-    <h1>{{site.name}}</h1>
-    <p>{{site.description}}</p>
-    <iframe src="https://player.vimeo.com/video/143783784?autoplay=0&color=ffffff" width="800" height="450"
-    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <nav>
-        <a href="https://vimeo.com/user12625616">Regardez ma chaîne Vimeo</a>
-        <a href="https://github.com/matouche">Visitez mon dépot GitHub</a>
-        <a href="/bond">Jouez aux Parapluies Soviétiques</a>
-    </nav>
-    
-</section>
-<section class="posts">
-    <h1 id="blog-icon">Derniers posts du blog</h1>
-    {% for post in site.posts %}
-        <article class="post">
-            <h1 class="small"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-            <div class="date">{{ post.date | date: " %e/%m/%Y" }}</div>
-            <div class="excerpt">
-                {{ post.excerpt }}
-            </div>
-
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Lire cet article médiocre jusqu'au bout &rightarrow;</a>
-        </article>
-    {% endfor %}
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Matouche's sandbox − Mathis Dubrul</title>
+</head>
+<body>
+    <h1>Matouche's sandbox − Mathis Dubrul</h1>
+    <ul>
+        <li><a href="https://vimeo.com/user12625616">Vimeo</a></li>
+        <li><a href="https://www.artstation.com/matouche">ArtStation</a></li>
+        <li><a href="https://zestedesavoir.com/tutoriels/672/reprenez-le-controle-de-vos-feuilles-de-style-avec-sass/">Tuto Sass (fr)</a></li>
+        <li><a href="https://github.com/Matouche">GitHub</a></li>
+    </ul>
+</body>
+</html>
