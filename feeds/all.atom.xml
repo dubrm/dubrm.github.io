@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Mathis Dubrul - Animateur/Illustrateur 2D</title><link href="https://matouche.github.io/" rel="alternate"></link><link href="https://matouche.github.io/feeds/all.atom.xml" rel="self"></link><id>https://matouche.github.io/</id><updated>2018-06-19T20:42:00+02:00</updated><entry><title>Premier post</title><link href="https://matouche.github.io/premier-post.html" rel="alternate"></link><published>2018-06-19T20:42:00+02:00</published><updated>2018-06-19T20:42:00+02:00</updated><author><name>Mathis</name></author><id>tag:matouche.github.io,2018-06-19:/premier-post.html</id><summary type="html">&lt;h1&gt;Ceci est un premier post&lt;/h1&gt;
+&lt;p&gt;Il n'est pas très intéressant.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Juste un test.&lt;/strong&gt;&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Ceci est un premier post&lt;/h1&gt;
+&lt;p&gt;Il n'est pas très intéressant.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Juste un test.&lt;/strong&gt;&lt;/p&gt;</content></entry></feed>
