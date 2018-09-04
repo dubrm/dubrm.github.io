@@ -378,11 +378,11 @@ body {
     margin: 1rem 0; }
   .education_wrapper p, .education_wrapper h2 {
     margin: 0; }
-  .education_wrapper p + h2 {
+  .education_wrapper h2.small {
     margin-top: 1rem;
     font-size: 1rem; }
-  .education_wrapper p + h2 + p {
-    font-size: .7rem; }
+  .education_wrapper p.small, .education_wrapper ul.small {
+    font-size: .8rem; }
 
 .skills {
   background-size: 40%;

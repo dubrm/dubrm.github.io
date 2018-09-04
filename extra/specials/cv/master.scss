@@ -90,12 +90,12 @@ body {
     p, h2 {
         margin: 0;
     }
-    p+h2 {
+    h2.small {
         margin-top: 1rem;
         font-size: 1rem;
     }
-    p+h2+p {
-        font-size: .7rem;
+    p.small, ul.small {
+        font-size: .8rem;
     }
 }
 
