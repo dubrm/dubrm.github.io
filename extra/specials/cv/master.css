@@ -434,6 +434,12 @@ body {
   .footer img {
     width: 200px; }
 
+section a {
+  color: #e73;
+  text-decoration: none; }
+  section a:hover, section a:focus, section a:active {
+    text-decoration: underline; }
+
 a.button {
   font-family: "Open Sans", sans-serif;
   float: right;
