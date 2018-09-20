@@ -130,6 +130,15 @@ article {
         color: lighten($color1, 10%);
     }
 }
+article ul {
+    padding-left: 2rem;
+    list-style: circle;
+}
+
+article ol {
+    padding-left: 2rem;
+    list-style: decimal;
+}
 
 .info {
     color: lighten($color3, 10%);
