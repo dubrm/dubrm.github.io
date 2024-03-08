@@ -14,11 +14,14 @@ header {
         color: #333;
         text-decoration: none;
         display: inline-block;
+        max-width: 25%;
+        float: left;
     }
 
     nav {
         display: inline-block;
-
+        max-width: 50%;
+        float: right;
         ul {
             li {
                 display: inline-block;
@@ -40,6 +43,6 @@ header {
 }
 .wrapper {
     &>h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 }
