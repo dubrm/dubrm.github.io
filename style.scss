@@ -4,11 +4,12 @@ body {
     margin: 2rem;
     font-size: 16px;
     line-height: 1.5em;
-    text-align: center;
     font-family: "Pangolin", sans-serif;
 }
 
 header {
+    display: block;
+    text-align: center;
     h1{ max-width: 25%;
         float: left;
         a {
@@ -17,7 +18,6 @@ header {
         text-decoration: none;
         display: block;
     }}
-
     nav {
         display: block;
         max-width: 50%;
