@@ -41,25 +41,25 @@ body {
         align-items: center;
     }
 }
-
-h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-ul {
-    margin-top: 4rem;
-}
-
-ul li a:hover {
-    background-color: #B96;
-}
-
-ul li a {
-    display: inline-block;
-    padding: .5rem 1rem;
-    margin-bottom: 1rem;
-    background-color: #A85;
-    text-decoration: none;
-    color: white;
+header {
+    h1 a {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    nav ul {
+        margin-top: 4rem;
+        li a:hover {
+            color: #B96;
+        }
+        li a {
+            display: inline-block;
+            padding: .5rem 1rem;
+            margin-bottom: 1rem;
+            color: #A85;
+            text-decoration: none;
+        }
+    }
 }
