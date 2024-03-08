@@ -9,14 +9,14 @@ body {
 }
 
 header {
-    h1 a {
+    h1{ max-width: 25%;
+        float: left;
+        a {
         font-size: 2rem;
         color: #333;
         text-decoration: none;
         display: block;
-        max-width: 25%;
-        float: left;
-    }
+    }}
 
     nav {
         display: block;
