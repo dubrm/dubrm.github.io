@@ -1,0 +1,65 @@
+---
+---
+body {
+    margin: 2rem;
+    font-size: 16px;
+    line-height: 1.5em;
+    text-align: center;
+    font-family: "Pangolin", sans-serif;
+}
+
+@media screen and (min-width: 900px) {
+    ul li {
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .video-container {
+        position: absolute;
+        left: 2rem;
+        top: 0%;
+        width: 56%;
+        height: 100%;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .presentation {
+        text-align: right;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        right: 5rem;
+        max-width: 30%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin-top: 4rem;
+}
+
+ul li a:hover {
+    background-color: #B96;
+}
+
+ul li a {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #A85;
+    text-decoration: none;
+    color: white;
+}
