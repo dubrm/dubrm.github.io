@@ -13,13 +13,13 @@ header {
         font-size: 2rem;
         color: #333;
         text-decoration: none;
-        display: inline-block;
+        display: block;
         max-width: 25%;
         float: left;
     }
 
     nav {
-        display: inline-block;
+        display: block;
         max-width: 50%;
         float: right;
         ul {
