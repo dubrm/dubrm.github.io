@@ -1,16 +1,11 @@
 ---
 layout: default
 ---
-{%- for post in posts -%}
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
-</article>
+<ul class="grid">
+{%- for post in site.categories.portfolio -%}
+  <li>
+    <a href="{{ post.url }}"><img src="{{site.url}}/assets/thumbnails/{{ post.thumbnail }}" alt="{{ post.title }}">
+    <strong>{{post.title}}</strong></a>
+  </li>
 {%- endfor -%}
+</ul>

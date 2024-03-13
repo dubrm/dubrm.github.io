@@ -1,0 +1,26 @@
+title: Mathis Dubrul
+subtitle: Réalisateur franco-belge de films d'animation
+author: Mathis Dubrul
+email: your-email@example.com
+description: >- 
+  Mathis Dubrul, réalisateur de films d'animation franco-belge
+baseurl: ""
+url: "https://dubrm.github.io"
+github_username:  dubrm
+permalink: none
+
+plugins:
+  - jekyll-feed
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+          path: ""
+          type: "posts"
+    values:
+      layout: "post"
