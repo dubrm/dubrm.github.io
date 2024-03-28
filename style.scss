@@ -1,11 +1,14 @@
 ---
 --- 
+
 body {
     margin: 2rem;
     font-size: 16px;
     line-height: 1.5em;
-    font-family: "Pangolin", sans-serif;
+    font-family: "Josefin Slab", sans-serif;
 }
+
+$hl_color: #9B5;
 
 .page-header {
     display: flex;
@@ -26,6 +29,7 @@ body {
         flex-direction: column;
         line-height: 1.7rem;
         justify-content: left;
+        font-weight: bold;
         a {
             font-size: 2rem;
         }
@@ -109,7 +113,7 @@ body {
         opacity: 100%;
         transition: 0.5s opacity;
         &:hover {
-            opacity: 90%;
+            opacity: 80%;
         }
     }
 
@@ -122,6 +126,8 @@ body {
             align-items: center;
             justify-items: right;
             color: #bbb;
+            font-weight: bold;
+            font-style: italic;
             &:hover {
                 color: #ccc;
             }
@@ -137,11 +143,11 @@ body {
 }
 
 a {
-    color: #A85;
+    color: $hl_color;
     text-decoration: none;
 
     &:hover {
-        color: #B96;
+        color: lighten($hl_color, 15%);
     }
 }
 
@@ -149,11 +155,11 @@ a {
     display: inline-block;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
-    background-color: #A85;
+    background-color: $hl_color;
     text-decoration: none;
     color: white;
     &:hover {
-        background-color: #B96;
+        background-color: lighten($hl_color, 15%);
         color: white;
     }
 }
@@ -162,11 +168,4 @@ footer {
     margin-top: 2rem;
     text-align: center;
     opacity: 25%;
-}
-
-.cv {
-    display: grid;
-    gap: 1rem 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    font-size: 1.1rem;
 }
