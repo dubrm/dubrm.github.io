@@ -134,11 +134,11 @@ $hl_color: #9B5;
 
             img {
                 max-width: 100%;
-                transition: filter 0.5s;
+                /*transition: filter 0.5s;
                 filter: blur(0em);
                 &[data-src] {
                     filter: blur(0.2em);
-                }
+                }*/
             }
         }
     }
