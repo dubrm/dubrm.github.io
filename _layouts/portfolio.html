@@ -5,8 +5,27 @@ layout: default
 <ul class="grid">
 {%- for post in site.categories.portfolio -%}
   <li>
-    <a href="{{ post.url }}"><img src="{{site.url}}/assets/thumbnails/{{ post.thumbnail }}" alt="{{ post.title }}">
+    <a href="{{ post.url }}">
+      <img
+        src="{{site.url}}/assets/thumbnails/placeholders/{{ post.thumbnail | split: '.' | first }}.jpeg"
+        data-src="{{site.url}}/assets/thumbnails/{{ post.thumbnail }}"
+        alt="{{ post.title }}">
     <strong>{{post.title}}</strong></a>
   </li>
 {%- endfor -%}
 </ul>
+
+<script>
+  let imagesToLoad = document.querySelectorAll("img[data-src]");
+  const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+      image.removeAttribute("data-src");
+    };
+  };
+
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+
+</script>

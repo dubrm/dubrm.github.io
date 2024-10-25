@@ -125,15 +125,20 @@ $hl_color: #9B5;
             display: grid;
             align-items: center;
             justify-items: right;
-            color: #bbb;
+            color: #222;
             font-weight: bold;
             font-style: italic;
             &:hover {
-                color: #ccc;
+                color: #333;
             }
 
             img {
                 max-width: 100%;
+                transition: filter 0.5s;
+                filter: blur(0em);
+                &[data-src] {
+                    filter: blur(0.2em);
+                }
             }
         }
     }
