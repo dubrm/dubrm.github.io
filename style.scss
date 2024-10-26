@@ -165,7 +165,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: color.adjust($hl_color, $lightness: 15%);
+        color: lighten($hl_color, 15%);
     }
 }
 
@@ -178,7 +178,7 @@ a {
     font-weight: bold;
     color: white;
     &:hover {
-        color: color.adjust($hl_color, $lightness: 15%);
+        color: lighten($hl_color, 15%);
         color: white;
     }
 }
