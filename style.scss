@@ -1,14 +1,19 @@
 ---
 --- 
+@use "sass:color";
+
+$hl_color: #B55;
+$em_color: #999;
+$head_font: Barriecito, serif;
+$base_font: "Afacad Flux", sans-serif;
+
 
 body {
     margin: 2rem;
     font-size: 16px;
     line-height: 1.5em;
-    font-family: "Josefin Slab", sans-serif;
+    font-family: $base_font;
 }
-
-$hl_color: #9B5;
 
 .page-header {
     display: flex;
@@ -27,20 +32,24 @@ $hl_color: #9B5;
     hgroup {
         display: flex;
         flex-direction: column;
-        line-height: 1.7rem;
+        line-height: 1.2rem;
         justify-content: left;
-        font-weight: bold;
+        //font-weight: bold;
         a {
             font-size: 2rem;
+            font-family: $head_font;
         }
         p {
-            color: #999;
+            color: $em-color;
+            font-family: $base_font;
+            font-weight: bold;
         }
     }
 }
 
 .header-menu {
     display: flex;
+    
 
     ul {
         display: flex;
@@ -55,7 +64,10 @@ $hl_color: #9B5;
     max-width: 50rem;
     display: flex;
     flex-direction: column;
-
+    h1, h2, h3 {
+        font-family: $head_font;
+        color: $hl-color;
+    }
     h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -65,13 +77,13 @@ $hl_color: #9B5;
         font-size: 1.5rem;
     }
     h3 {
-        font-weight: bold;
+        //font-weight: bold;
     }
 
     p,
     ul,
     h2 {
-        margin-bottom: 0.5rem;
+        margin-bottom: .5rem;
     }
 
     em {
@@ -126,8 +138,9 @@ $hl_color: #9B5;
             align-items: center;
             justify-items: right;
             color: #222;
-            font-weight: bold;
+            //font-weight: bold;
             font-style: italic;
+            //font-family: $head_font;
             &:hover {
                 color: #333;
             }
@@ -152,7 +165,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: lighten($hl_color, 15%);
+        color: color.adjust($hl_color, $lightness: 15%);
     }
 }
 
@@ -162,9 +175,10 @@ a {
     margin-bottom: 1rem;
     background-color: $hl_color;
     text-decoration: none;
+    font-weight: bold;
     color: white;
     &:hover {
-        background-color: lighten($hl_color, 15%);
+        color: color.adjust($hl_color, $lightness: 15%);
         color: white;
     }
 }
