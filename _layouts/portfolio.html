@@ -16,16 +16,16 @@ layout: default
 </ul>
 
 <script>
-  let imagesToLoad = document.querySelectorAll("img[data-src]");
-  const loadImages = (image) => {
-    image.setAttribute("src", image.getAttribute("data-src"));
-    image.onload = () => {
-      image.removeAttribute("data-src");
-    };
+    const loadImages = (image) => {
+    image.src = image.getAttribute("data-src");
   };
 
-  imagesToLoad.forEach((img) => {
-    loadImages(img);
-  });
+  window.onload = () => {
+      let imagesToLoad = document.querySelectorAll("img[data-src]");
+      imagesToLoad.forEach((img) => {
+        loadImages(img);
+      })
+  };
+
 
 </script>
