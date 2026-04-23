@@ -16,8 +16,8 @@ Il sera aussi bien question de l’actualité du monde que de la vie quotidienne
 
 ![Le vol de la Joconde : une affaire curieuse](../assets/gazette/bureau.webp)
 
-![Le vol de la Joconde : l'heure du crime](../assets/vol.webp)
+![Le vol de la Joconde : l'heure du crime](../assets/gazette/vol.webp)
 
-![L'élection de Josephine Pencalet, première conseillère municipale](../assets/douarnenez.webp)
+![L'élection de Josephine Pencalet, première conseillère municipale](../assets/gazette/douarnenez.webp)
 
-![La grippe espagnole](../assets/flu.webp)
+![La grippe espagnole](../assets/gazette/flu.webp)
