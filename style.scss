@@ -1,25 +1,30 @@
 ---
---- 
-@use "sass:color";
+---
+//@use "sass:color";
 
 $hl_color: #B55;
 $em_color: #999;
+$text_color: #001;
+$bg_color: #ffe;
 $head_font: Barriecito, serif;
 $base_font: "Afacad Flux", sans-serif;
 
 
 body {
-    margin: 2rem;
     font-size: 16px;
     line-height: 1.5em;
     font-family: $base_font;
+    color: $text_color;
+    background-color: $bg_color;
 }
 
 .page-header {
+    background-color: $text_color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    padding: 1.5rem 1rem;
     margin-bottom: 1rem;
 
     @media (max-width: 686px) {
@@ -32,7 +37,7 @@ body {
     hgroup {
         display: flex;
         flex-direction: column;
-        line-height: 1.2rem;
+        line-height: 1.5rem;
         justify-content: left;
         //font-weight: bold;
         a {
@@ -67,6 +72,7 @@ body {
     h1, h2, h3 {
         font-family: $head_font;
         color: $hl-color;
+        line-height: 1.2em;
     }
     h1 {
         font-size: 2rem;
@@ -75,9 +81,6 @@ body {
 
     h2 {
         font-size: 1.5rem;
-    }
-    h3 {
-        //font-weight: bold;
     }
 
     p,
@@ -105,6 +108,10 @@ body {
     }
 }
 
+.post-wrapper {
+    margin-top: 0.5rem;
+}
+
 .post-wrapper ul {
     list-style-type: "🌻 ";
 }
@@ -122,10 +129,13 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
     img {
+        border-radius: 20%;
+        scale: 90%;
         opacity: 100%;
-        transition: 0.5s opacity;
+        transition: 0.5s opacity, 0.5s scale;
         &:hover {
             opacity: 80%;
+            scale: 95%;
         }
     }
 
@@ -136,13 +146,10 @@ body {
         a {
             display: grid;
             align-items: center;
-            justify-items: right;
-            color: #222;
-            //font-weight: bold;
-            font-style: italic;
-            //font-family: $head_font;
+            justify-items: center;
+            color: $text_color;
             &:hover {
-                color: #333;
+                color: lighten($text_color, 20%);
             }
 
             img {
@@ -154,9 +161,15 @@ body {
                 }*/
             }
         }
+        &:hover strong{
+            top: 0;
+        }
     }
     strong {
         font-weight: normal;
+        position: relative;
+        top: -1rem;
+        transition: 0.5s top;
     }
 }
 
@@ -187,4 +200,8 @@ footer {
     margin-top: 2rem;
     text-align: center;
     opacity: 25%;
+}
+
+iframe {
+    margin-bottom: 1rem;
 }
